@@ -1,6 +1,8 @@
 CountString  = 
-// Telt het aantal herhalingen van een chracter of een string
-// > 1 is more machines
+// lambertus.dekker@gmail.com
+// calculated column
+// Telt het aantal herhalingen van een chracter of een string.
+
 VAR string_ = "*"
 VAR len_ = len(string_)
 VAR count_ = 
