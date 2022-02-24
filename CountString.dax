@@ -5,18 +5,19 @@ CountString  =
 
 VAR string_ = "*"
 VAR len_ = len(string_)
+VAR field_ = 'table'[column]
 VAR count_ = 
 (
     LEN(
-        'Inv Lines - Tags p Customer (2)'[All Tags]
+        field_
     )-LEN(
         SUBSTITUTE(
-            'Inv Lines - Tags p Customer (2)'[All Tags],
+            field_,
             string_,
             ""
         )
     )
 ) / len_
-RETURN
 
+RETURN
 count_
