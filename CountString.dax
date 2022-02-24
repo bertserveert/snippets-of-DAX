@@ -1,0 +1,20 @@
+CountString  = 
+// Telt het aantal herhalingen van een chracter of een string
+// > 1 is more machines
+VAR string_ = "*"
+VAR len_ = len(string_)
+VAR count_ = 
+(
+    LEN(
+        'Inv Lines - Tags p Customer (2)'[All Tags]
+    )-LEN(
+        SUBSTITUTE(
+            'Inv Lines - Tags p Customer (2)'[All Tags],
+            string_,
+            ""
+        )
+    )
+) / len_
+RETURN
+
+count_
