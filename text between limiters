@@ -1,0 +1,25 @@
+string (column) = 
+VAR First_ =
+    FIND (
+        ".",
+        table[column],
+        1
+    )
+VAR Second_ =
+    FIND (
+        ".",
+        table[column],
+        First_ + 1
+    )
+VAR Third_ =
+    FIND (
+        ".",
+        table[column],
+        Second_ + 1
+    )
+RETURN
+    MID (
+        table[column],
+        Second_ + 1,
+        Third_ - Second_ - 1
+    )
